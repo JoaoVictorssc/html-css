@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+    <link rel="shortcut icon" href="ESPADAO.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body{
+            background-color: cyan;
+        }
+    </style>
+    <h1>imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel"> 
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em html5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg">
+    </audio>
+    <p>se seu navegador nao suporta esses formato <a href="midia/musica.mp3" target="_blank" download="musica.mp3" type="audio/mpeg">clique nesse link para baixar para mp3</a></p>
+    <video preload="metadata" width="600" poster="video/FOTO ORIGINAL.jpeg" controls autoplay>
+        <source src="video/videoplayback.mp4" type="video/mp4">
+        <p><a href="video/videoplayback.mp4" download="videoplayback.mp4" type="video/mpeg">link para download.mp4</a></p>
+    </video>
+
+</body>
+</html>
