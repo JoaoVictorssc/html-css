@@ -4,4 +4,4 @@
 
 estou aprendendo a criar sites  e agora vou gerenciar meus repositorios
 
-<a href="github.com/JoaoVictorssc/html-css/Exercícios/Ex002/index.html"> veja na integra
+<a href="https://github.com/JoaoVictorssc/html-css/blob/main/Botando%20em%20pratica/pag01.html"> veja na integra
