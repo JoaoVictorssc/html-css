@@ -15,14 +15,14 @@
 
 html,body{
     min-width: 100vh;
+
 }
 
 header{
     background-color: black;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0%;
+    padding-bottom: 30px;
     font-variant: small-caps;
 }
 
@@ -48,9 +48,10 @@ header a, footer a{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 3em;
     padding-left: 30px;
     position: relative;
+    font-size: 1.5em;
 }
 
 section.normal{
@@ -60,40 +61,52 @@ section.normal{
     font-family: var(--fonte-padrao);
 }
 
+section#espaço{
+    font-family: var(--fonte-padrao);
+    line-height: 3em;
+}
+
 section.imagem1{
-    height: 60vh;
-    background:   url(../imagens/background001.jpg), left center no-repeat;
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
     background-attachment:fixed ;
     background-size:cover;
+    box-shadow: inset 2px -5px 10px 6px rgba(0, 0, 0, 0.404);
 }
 
 section.imagem1 >p{
-    background-color: rgba(0, 0, 0, 0.404);
-    padding-top: 20px;
-    width: 300px;
-    height: 250px;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding-top: 10px;
+    max-width: 300px;
+    height: 350px;
     font-family: var(--fonte-padrao);
     font-size: 1.0em;
     color: white;
-    position: absolute;
+    margin-top: -30px;
+    text-shadow: 1px 1px black;
+    line-height: 2em;
 }
 
 section.imagem2{
-    height: 60vh;
-    background:   url(../imagens/background002.jpg), left center no-repeat;
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
     background-attachment:fixed ;
-    background-size: cover;
+    background-size:cover;
+    box-shadow: inset 2px -5px 10px 6px rgba(0, 0, 0, 0.404);
+    background-repeat: no-repeat ;
 }
 
 section.imagem2 >p {
-    background-color: rgba(0, 0, 0, 0.404);
-    padding-top: 20px;
-    width: 300px;
-    height: 250px;
+    background-color: rgba(0, 0, 0, 0.123);
+    padding-top: 10px;
+    max-width: 300px;
+    height: 350px;
     font-family: var(--fonte-padrao);
     font-size: 1.0em;
     color: white;
-    position: absolute;
+    margin-top: -30px;
+    text-shadow: 1px 1px black;
+    line-height: 2em;
 }
 
 footer{
