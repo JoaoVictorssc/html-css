@@ -10,13 +10,20 @@
 
 *{
     margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    min-width: 100vh;
 }
 
 header{
     background-color: black;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0%;
+    font-variant: small-caps;
 }
 
 header h1{
@@ -32,8 +39,66 @@ header p{
     padding-top: 10px;
 }
 
-header p >a{
+header a, footer a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    position: relative;
+}
+
+section.normal{
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: var(--fonte-padrao);
+}
+
+section.imagem1{
+    height: 60vh;
+    background:   url(../imagens/background001.jpg), left center no-repeat;
+    background-attachment:fixed ;
+    background-size:cover;
+}
+
+section.imagem1 >p{
+    background-color: rgba(0, 0, 0, 0.404);
+    padding-top: 20px;
+    width: 300px;
+    height: 250px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.0em;
+    color: white;
+    position: absolute;
+}
+
+section.imagem2{
+    height: 60vh;
+    background:   url(../imagens/background002.jpg), left center no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+}
+
+section.imagem2 >p {
+    background-color: rgba(0, 0, 0, 0.404);
+    padding-top: 20px;
+    width: 300px;
+    height: 250px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.0em;
+    color: white;
+    position: absolute;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
 }
